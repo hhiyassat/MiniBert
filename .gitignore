@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Model files (too large for git)
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Data files
+*.txt
+*.jsonl
+*.parquet
+*.csv
+*.zip
+
+# Tokenizer files (can be regenerated)
+tokenizer.json
+tokenizer_config.json
+vocab.txt
+syllable_tokenizer.json
+word_syllables.json
+
+# Model directories (contain large files)
+model/
+model_*/
+model-*/
+model*/
+model_eng/
+model 1000000 ver1_edition/
+word_syllables_output_*/
+
+# Logs
+*.log
+training_output.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Samples (can be regenerated)
+samples/
+
+# Excluded data directories
+ex_data/
+notebook/
+
+# Temporary files
+*.tmp
+*.bak
+
