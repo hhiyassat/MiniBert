@@ -5,11 +5,11 @@ __pycache__/
 *.so
 .Python
 
-# Model files (too large for git)
-*.pt
+# Model files - allow .pt files but exclude epoch checkpoints
 *.pth
 *.ckpt
 *.bin
+*_epoch*.pt
 
 # Data files
 *.txt
@@ -25,14 +25,8 @@ vocab.txt
 syllable_tokenizer.json
 word_syllables.json
 
-# Model directories (contain large files)
-model/
-model_*/
-model-*/
-model*/
-model_eng/
-model 1000000 ver1_edition/
-word_syllables_output_*/
+# Model directories - now included but only best models
+# Exclude epoch checkpoints via pattern above
 
 # Logs
 *.log
